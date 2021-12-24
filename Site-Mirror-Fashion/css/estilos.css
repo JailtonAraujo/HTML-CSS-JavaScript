@@ -21,11 +21,18 @@ body{
 
 .menu-opcoes a{
     color: #003366;
+    text-decoration: none;
+}
+
+.menu-opcoes a:hover{
+    border-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 4px;
 }
 
 .menu-opcoes ul li{
     display: inline;
-    margin-left: 20px;;
+    margin-left: 20px;
 }
 
 .sacola{
@@ -38,7 +45,7 @@ body{
 }
 
 header{
-    position: absolute;
+    position: relative;
 }
 
 .menu-opcoes{
@@ -52,3 +59,40 @@ header{
     top: 0;
     right: 0;
 }
+
+.busca, .menu-departamento{
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+    width: 230px;
+
+}
+
+.busca h2, .busca form, .menu-departamento h2{
+    margin: 10px;
+}
+
+.menu-departamento li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamento a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.busca input[type=search]{
+    width: 170px;
+}
+
+.busca, .menu-departamento	{
+	float:left;
+	}
+
+.menu-departamento	{
+	clear:left;
+	}
