@@ -15,6 +15,12 @@ body{
         width: 140px;
 }
 
+.menu-opcoes a:hover	{
+    color: #007DC6;
+}
+.menu-opcoes a:active	{
+    color: #867DC6;
+}
 
 .menu-opcoes ul{
     font-size: 15px;
@@ -102,6 +108,16 @@ input[type="search"]	{
 
 .busca input[type=search]{
     width: 170px;
+}
+
+.menu-departamento li ul	{
+    display:none;
+}
+.menu-departamento li:hover ul	{
+    display:block;
+}
+.menu-departamento ul ul li	{
+    background-color: #DCDCDC;
 }
 
 .busca, .menu-departamento	{
@@ -222,3 +238,4 @@ right: 0;
     float: left;
     padding-left: 15px;
 }
+
