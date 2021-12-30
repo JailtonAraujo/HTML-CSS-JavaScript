@@ -67,4 +67,6 @@ p::first-line{
     font-variant: small-caps;
 }
 
-
+:not(p)	+ p::first-line	{
+    font-variant: small-caps;
+}
