@@ -309,7 +309,7 @@ right: 0;
     margin-bottom: 20px;
 }
 
-@media	(min-width:	320px)	{
+@media	(max-width:	939px)	{
     .container{
         width: 96%;
     }
@@ -355,3 +355,20 @@ right: 0;
 }
 
 }
+
+/*
+@media(min-width: 480px){
+    header h1{
+        margin: 5px 0;
+    }
+
+    .menu-departamento{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-departamento nav > ul{
+        column-count: 2;
+    }
+}
+/*
