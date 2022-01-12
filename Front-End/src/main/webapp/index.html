@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<style>
+body {
+	background-image: linear-gradient(to left, #00CED1, #00BFFF);
+}
+
+form {
+	margin: 0 auto;
+	padding: 10%;
+}
+
+fieldset {
+	background-image: linear-gradient(to bottom, #5F9EA0, #6495ED);
+	width: 25%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-style: none;
+	box-shadow: 1px 1px 4px 4px #333333;
+	border-radius: 3px;
+}
+
+label {
+	display: table;
+	margin-top: 5px;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+
+input {
+	display: table;
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	background: none;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: black;
+	box-shadow: 1px 1px 4px #333333;
+	font-weight: bold;
+}
+
+#salvar {
+	width: 60%;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 8px;
+	background: none;
+	border-color: black;
+}
+
+#salvar:hover{
+	background-color: black;
+	color:#fff;
+}
+
+
+legend {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-family: sans-serif;
+	text-shadow: 1px 1px #333333;
+}
+
+@media(min-width: 480px){
+	fieldset {
+	size: 100% 100%;
+}
+
+}
+
+</style>
+
+<body>
+
+	<form action="">
+
+		<fieldset>
+		
+		<h2>LOGIN</h2>
+
+			<label>Nome:</label> <input type="text" id="nome" name="nome">
+
+			<label>Email:</label> <input type="email" id="email" name="email">
+
+			<label>Senha:</label> <input type="password" id="senha" name="senha">
+
+			<input type="submit" id="salvar" name="salvar">
+
+		</fieldset>
+	</form>
+
+</body>
+</html>
