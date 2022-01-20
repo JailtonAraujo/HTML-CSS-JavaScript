@@ -30,6 +30,10 @@ label[for=azul]::after	{
     display: none;
 }
 
+.cores input:not(:checked)	+	label img	{
+    display:	none;
+}
+
 .cores label::after	{
     position: absolute;
     top: 30px;
@@ -66,7 +70,7 @@ label[for=azul]::after	{
 
 .produto h1	{
     font-size: 1.8em;
-    font-weight:	bold;
+    font-weight: bold;
 }
 .produto p	{
     font-size: 1.2em;
@@ -104,4 +108,68 @@ label[for=azul]::after	{
 
 .cores label::after	{
     cursor:	pointer;
+}
+
+
+@media (min-width: 630px){
+
+    .produto{
+        /*a	foto	vai	se	posicionar	absolutamente	com	relação	a	esse	elemento,
+		por	isso	preciso	estar	posicionado	*/
+		position:	relative;
+		
+        /*	deixar	40%	de	espaço	em	branco	na	esquerda	para	foto	ocupar	*/
+		padding-left: 40%;
+
+    }
+
+    .cores{
+        /*	estava	relative	antes;	reinicio	para	static	para	evitar	que	a	foto	se	posicione	com	relaçã
+        o	a	mim	*/
+		position:	static;
+
+		/*	zerando	o	padding-top	que	tinha	antes	e	não	preciso	mais	*/
+		padding: 0;
+
+    }
+
+    .cores legend	{
+        /*	estava	absolute	antes,	para	ter	o	mesmo	comportamento	no	Chrome	e	no	Firefox;
+        agora	podemos	voltar	ao	fluxo	da	página	*/
+        position:	static;
+    }
+
+    .cores label img	{
+        /*	imagem	se	posiciona	absolutamente	à	esquerda	com	relação	ao	.produto	*/
+        position:	absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+		max-height: 100%;
+
+    }
+
+    .cores label:after	{
+        /*	as	bolinhas	coloridas	tinham	posição	absoluta	e	não	precisamos	mais,
+        basta	flutuar	uma	do	lado	da	outra	*/
+        position: static;
+        float: left;
+}
+ 
+.produto	{
+    font-size: 1.2em;
+}
+
+.cores label::after	{
+    margin-right: 10px;
+}
+
+fieldset	{
+    display:	inline-block;
+    vertical-align:	top;
+    margin: 1em 0;
+    min-width: 240px;
+    width: 45%;
+}
+
 }
