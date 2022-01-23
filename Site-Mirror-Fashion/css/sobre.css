@@ -61,6 +61,8 @@ p::first-letter{
 
 h1 + p{
     text-indent: 0;
+
+    
 }
 
 p::first-line{
