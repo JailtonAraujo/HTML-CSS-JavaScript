@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aquamarine;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        nav{
+            position: relative;
+        }
+
+        
+
+        ul{
+            background-color: white;
+            border-radius: 4px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -7px 9px 17px 0 #00000017;
+            
+            width: 0;
+            overflow: hidden;
+            transform: translate(50px);
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s ease;
+            padding: 20px;
+        }
+
+        nav.show ul{
+            width: 450px;
+            transform: translate(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+
+        li a{
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: crimson;
+        }
+
+        .icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -80px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: white;
+            box-shadow: 0 0 17px #00000017;
+            transition: 0.5 ease;
+        }
+
+        .fa-bars{
+            display: block;
+        }
+
+        .fa-close{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">blog</a></li>
+            <li><a href="">contatos</a></li>
+        </ul>
+        <div class="icon">
+            <i class="fa fa-bars" id="one"></i>
+            <i class="fa fa-close" id="two"></i>
+        </div>
+    </nav>
+
+    <script>
+
+        const icon = document.querySelector('.icon');
+        const nav = document.querySelector('nav');
+        let cont = 1;
+
+        icon.addEventListener('click',()=>{
+
+            icon.classList.toggle('close');
+            nav.classList.toggle('show');
+            cont++;
+
+            if(cont%2 == 0 ){
+                document.getElementById('one').style.display = 'none';
+                document.getElementById('two').style.display = 'block';
+            }else{
+                document.getElementById('one').style.display = 'block';
+                document.getElementById('two').style.display = 'none';
+            }
+        })
+
+    </script>
+
+</body>
+</html>

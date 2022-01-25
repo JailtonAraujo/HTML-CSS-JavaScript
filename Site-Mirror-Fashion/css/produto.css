@@ -94,6 +94,7 @@ label[for=azul]::after	{
     display:	block;
     padding: 0.5em 1em;
     margin: 1em 0;
+    cursor: pointer;
 }
 
 .cores label::after	{
@@ -126,6 +127,41 @@ label[for=azul]::after	{
     max-width: 36em;
 }
 
+table{
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+thead{
+    background-color: #999;
+}
+
+thead th	{
+    font-weight:	bold;
+    padding: 0.3em 1em;
+    text-align:	center;
+}
+
+td	{
+    padding: 0.3em;
+}
+
+tr:nth-child(2n)	{
+    background-color: #CCC;
+}
+
+td:first-child	{
+    font-style:	italic;
+}
+.product-back{
+background-color: #F2F2F2;
+margin-top: 1em;
+border-top: 2px	solid	#CCC;
+}
+
+.cores label img	{
+border: 2px	solid	#CCC;
+}
 
 
 @media (min-width: 630px){
@@ -166,13 +202,12 @@ label[for=azul]::after	{
 
     }
 
-    .cores label:after	{
+    .cores label::after	{
         /*	as	bolinhas	coloridas	tinham	posição	absoluta	e	não	precisamos	mais,
         basta	flutuar	uma	do	lado	da	outra	*/
         position: static;
         float: left;
-
-        
+    
 }
  
 .produto	{
@@ -183,12 +218,10 @@ label[for=azul]::after	{
     margin-right: 10px;
 }
 
-fieldset	{
+fieldset{
     display:	inline-block;
     vertical-align:	top;
     margin: 1em 0;
     min-width: 240px;
-    width: 45% 
-
-
+    width: 45%;
     }
