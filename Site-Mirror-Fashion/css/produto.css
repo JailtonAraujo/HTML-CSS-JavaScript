@@ -164,6 +164,19 @@ border: 2px	solid	#CCC;
 }
 
 
+output[name="valortamanho"]{
+    display: inline-block;
+    height: 40px;
+    width: 44;
+
+    line-height: 44px;
+	text-align:	center;
+	border: 3px	solid	#666;
+	border-radius: 50%;
+	color: #555
+
+}
+
 @media (min-width: 630px){
 
     .produto{
@@ -225,3 +238,4 @@ fieldset{
     min-width: 240px;
     width: 45%;
     }
+}
