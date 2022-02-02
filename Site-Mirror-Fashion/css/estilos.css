@@ -1,8 +1,11 @@
 body{
     color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'PT	Sans',	sans-serif;
 }
 
+.painel h2	{
+    font-family: 'Bad	Script',	sans-serif;
+}
 
 .sacola{
     background-image: url(../img/sacola.png);
@@ -149,6 +152,9 @@ input[type="search"]	{
     
 }
 
+.painel h2	{
+    font-family: 'Bad	Script',	sans-serif;
+}
 
 .painel li:hover{
     transform: scale(1.2) rotate(5deg);
@@ -205,6 +211,26 @@ input[type="search"]	{
 	margin-bottom: 10px;
 
 
+}
+
+button.pause, .play{
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:  1px 1px 4px #999;
+}
+
+button.pause:hover{
+    background-color: #2ca09a;
+    transform: scale(1.2);
+}
+
+button.play:hover{
+    background-color: #2ca09a;
+    transform: scale(1.2);
 }
 
 .painel a{
@@ -308,6 +334,35 @@ right: 0;
 .painel{
     margin-bottom: 20px;
 }
+
+.painel button	{
+    /*	posicionamento	*/
+    float:	right;
+    margin-right: 10px;
+    padding: 10px;
+    /*	estilo	*/
+    background-color: #333;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px	rgba(30,	30,	30,	0.5);
+    color:	white;
+    font-size: 1em;
+    text-decoration:	none;
+    text-shadow: 1px 0 1px	black;
+    /*	animação	*/
+    transition: 0.3s;
+}
+.painel button:hover	{
+    background-color: #393939;
+    box-shadow: 1px 0 20px	rgba(200,	200,	120,	0.9);
+}
+
+.painel li:nth-child(n+7)	{
+    display: none;
+    }
+.painel-aberto li:nth-child(n+7)	{
+    display: inline-block;
+    }    
 
 @media	(max-width:	939px)	{
     .container{

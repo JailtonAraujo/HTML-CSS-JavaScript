@@ -14,7 +14,7 @@
 
     <h1>A Mirror Fashion</h1>
     <p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo.
-        Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
+        Fundada a <?php print date('Y') - 1932?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
         participação em 118 deles.</p>
 
     <p>Nosso centro de distribuição fica em <a href="https://www.google.com.br/maps?q=Jacarezinho">Jacarezinho, no Paraná</a> . De lá, saem 48 aviões que
@@ -29,6 +29,10 @@
     <p>Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em contato
         se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.</p>
 
+        <iframe	width="420" height="315" src="http://www.youtube.com/embed/Tb06abHE4hY"
+frameborder="0" allowfullscreen></iframe>
+
+
     <h2 id="historia" >Historia</h2>
 
     <figure id="familia-pelho">
@@ -36,7 +40,7 @@
         <figcaption>Familia Pelho</figcaption>
     </figure>
 
-    <p>A fundação em 1932 ocorreu no momento da descoberta econônica do interior do Paraná. A 
+         A fundação em 1932 ocorreu no momento da descoberta econônica do interior do Paraná. A 
         família Pelho, tradicional da região, investiu todas as suas economias nessa nova iniciativa, 
         revolucionária para a época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular visão 
         administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado 
@@ -70,9 +74,19 @@
             <li>Mais de um milhão de funcionários em todo o mundo</li>
         </Ul>
 
+        <iframe	width="425" height="350" frameborder="0"
+        scrolling="no" marginheight="0" marginwidth="0"
+        src="http://maps.google.com.br/maps?q=Jacarezinho&amp;output=embed">
+        </iframe>
+        
         <div id="rodape">
             <img src="img/logo.png" alt="Loga Da Mirror Fashion">
             &copy; copyrigth Mirror Fashion
+            
+            <?php
+            print date('Y');
+           ?>
+
         </div>
 </body>
 
